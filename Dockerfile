@@ -1,4 +1,4 @@
-from mode:18.20.6-slim
+from node:18.20.6-slim
 workdir /app
 add . /app
 run npm install
