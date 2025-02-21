@@ -10,6 +10,96 @@
 <body>
     <img class="logo" src="./images/idn-logo.png" alt="idn-logo">
      <h1>mari kita belajar</h1>
-     <p>coba perubahan</p> 
+     
+     <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Penerimaan Mahasiswa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="date"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Form Penerimaan Mahasiswa Baru</h2>
+        <form action="#" method="POST">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" required placeholder="Masukkan nama lengkap">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Masukkan email">
+
+            <label for="tanggal-lahir">Tanggal Lahir:</label>
+            <input type="date" id="tanggal-lahir" name="tanggal_lahir" required>
+
+            <label for="alamat">Alamat:</label>
+            <textarea id="alamat" name="alamat" rows="4" required placeholder="Masukkan alamat lengkap"></textarea>
+
+            <label for="program-studi">Program Studi yang Dipilih:</label>
+            <select id="program-studi" name="program_studi" required>
+                <option value="Teknik Informatika">Teknik Informatika</option>
+                <option value="Manajemen">Manajemen</option>
+                <option value="Sistem Informasi">Sistem Informasi</option>
+                <option value="Akuntansi">Akuntansi</option>
+                <option value="Psikologi">Psikologi</option>
+            </select>
+
+            <label for="berkas">Upload Berkas Pendaftaran (Opsional):</label>
+            <input type="file" id="berkas" name="berkas">
+
+            <input type="submit" value="Kirim Pendaftaran">
+        </form>
+    </div>
+
+</body>
+</html>
+
+
 </body>
 </html>
