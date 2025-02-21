@@ -5,6 +5,7 @@ pipeline {
         stage('Pull SCM') {
             steps {
                 git branch: 'main', url: 'https://github.com/ponen48/simple-apps.git'
+                
             }
         }
         
